@@ -1,0 +1,33 @@
+To clone our repository to the system 
+
+>git clone <copy the link from repository>
+
+To check the status of our repository 
+
+>git status
+
+To add a file to git
+
+>git add <foldername>
+
+Then 
+
+>git commit -m "added folder"
+
+Then 
+
+>git push 
+
+To create a branch to the repository 
+
+>git branch < branch name >
+
+To switch to a new branch
+
+>git checkout <branch name>
+
+Before committing to a new branch 
+
+>git remote origin
+
+>git push origin <branch name>
