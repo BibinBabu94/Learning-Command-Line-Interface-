@@ -1,0 +1,28 @@
+->To search for a specific word in the file
+
+>grep "the" <filename> 
+To search word "the" from a file(grep is case sensitive)
+
+>grep -i "the" <filename> 
+This will search both upper and lower case letters 
+
+->To read only the first five lines or last five lines of a file we use head and tail command
+
+>head <filename>
+
+>tail <filename>
+
+-> Pipes can be used to merge two commands together 
+
+>grep -i "the" <filename> | sort -n 
+
+-> awk and seed command
+
+Awk command is used to read a particular column or line from a file
+
+>awk '{print $2}' <filename>
+
+Seed command is used to bring changes a particular line in a file
+
+>sed "s/orange/red" <filename>
+This commamnd is used to replace orange with red
