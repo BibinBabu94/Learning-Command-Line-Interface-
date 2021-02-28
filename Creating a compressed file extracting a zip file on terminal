@@ -1,0 +1,21 @@
+To create a compressed file
+
+>tar cvf <filename>
+Cvf for index file
+
+>tar caf <filename>
+For unindexed
+
+To extract a tar file
+
+>tar xvf <filename>
+        Or
+>tar xf <filename>
+
+To unzip a file
+
+>unzip <filename>
+
+To zip a file
+
+>zip <filename>
