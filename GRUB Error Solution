@@ -1,0 +1,34 @@
+There maning problems arising due to Removing one OS from our system and then we meet at GRUB menu while turning on our system.
+...
+...
+Solution:
+.
+.
+Turn on your system with Boot Menu 
+Go to BIOS Setup 
+   Select the orginal OS of the system an press F5/F6 to make changes and F10 to save and exit
+This will open your system OS
+I am taking the case of Windows:
+.
+.
+Goto Command Prompt (run this as administrator)
+Type the following commands:
+> diskpart (to get the diskpart promt where we will be working)
+diskpart>list disk (will give all the available disk)
+>select disk 0 (To select the system disk Hint: Online is the name commonly used for system disk)
+>list partition (This will list all the partition)
+>select partition 1 ( which is my system partion which is in mb)
+>assign letter x (This will create a local disk x)
+>exit (To exit from diskpart)
+>x: (to get to the directory)
+>dir ( to see the content)
+>cd efi (to change folder)
+>dir  (to get name of the folder we need to remove)
+.
+.
+In my case I wanted to remove Ubuntu 
+>rd ubuntu /s ( to remove the folder)
+>confirm Y ( Final step to confirm our deletion)
+.
+.
+Restart our system and its all good to use.
